@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body onload="startTime()">
+
+    <!-- Header Started -->
+    <header class="mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar py-2 justify-content-between">
+                        <a class="navbar-brand">
+                            <H1>Todo List</H1>
+                        </a>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchtextbox" />
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ended -->
+
+    <!-- Todo Section Table Started-->
+    <section class="todo-table mx-auto">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-8">
+                    <h1 class="mb-3">Todo List WebPage By G.J.Gojiya</h1>
+                    <h1 id="clock" class="mb-3"></h1>
+                    <div class="todo-inner">
+                        <div class="form-row d-flex">
+                            <div class="col-8 mr-sm-1">
+                                <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                                <input type="hidden" id="saveindex">
+                            </div>
+                            <button type="button" class="btn btn-success mr-sm-1 my-auto" id="addtaskbtn">
+                                <span class="iconify" data-icon="fluent:album-add-24-filled" data-inline="false"></span>
+                                </button>
+                            <button type="button" class="btn btn-success mr-sm-1" id="savetaskbtn" style="display: none;">
+                                <span class="iconify" data-icon="flat-ui:save" data-inline="false"></span>
+                                </button>
+                            <button type="button" id="deleteallbtn" class="btn btn-danger">
+                                <span class="iconify" data-icon="ant-design:delete-filled" data-inline="false"></span>
+                                </button>
+                        </div>
+                        <div class="to-do-output">
+                            <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Todo Section Table Ended -->
+
+
+    <script src="js/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</body>
+
+</html>
